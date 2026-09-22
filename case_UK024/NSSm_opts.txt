@@ -1,0 +1,17 @@
+xc_ok = 0 #Enable cross charging?
+fst_ds = 0 #How much foresight is called for?
+rept_int = 40000 #How often to update progress display from monitor.py
+sf_max = 2.5 #Max. allowed over-genn. factor
+sf_min = 0.3 #Min. allowed over-genn. factor
+sf_est = 1.2 #Initial estimate for over-genn. factor
+sf_scl = 1.1 #How much to budge over-genn. factor by when attempting to bracket the root
+accp_crt = 1 #Which acceptability criterion to use: unmet demand (0) or minimum slack (1)
+accp_umd = 100 #Maximum amount of permitted unmet demand (GWh)
+accp_slk = 3 #Minimum amount of required slack at all points (GWh)
+N_IHIt = 8 #Min. number of interval halvings
+M_IHIt = 14 #Max. number of interval halvings
+bad_npv = 1000000000000000000 #Prevent a capped over-genn. factor returning a good cost
+init_edcost = 130 #The initial cost of energy deficit
+edcst_x = 0.025 #Controls by how much we reduce the cost of energy deficit where appropriate
+num_Rstt = 200 #How many evaluations should each call of scipy.optimise.fmin do?
+cubi_tol = 0.001 #Tolerance for an acceptable cubic fitting
