@@ -1,0 +1,7 @@
+rated_input_power = 1
+rated_output_power = 1
+store_capacity = 500
+round_trip_efficiency = 0.94
+self_discharge_rate = 0.000499875020830709
+lower_fraction = 0.25
+upper_fraction = 0.75
