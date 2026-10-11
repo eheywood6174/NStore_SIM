@@ -1,5 +1,5 @@
 **Welcome to NStore_SIM**
-\n
+
 This repository contains a full set of NStore_SIM base scripts and a collection of test cases, all translated to Python (tested on version 3.11.9).
 Below are a brief set of instructions to help you get started.
 
