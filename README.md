@@ -8,16 +8,7 @@ Below are a brief set of instructions to help you get started.
 **What do I need to download?**
 NStore_SIM requires **all** the files in _universal_functions_ and the files from at least **one case**. Cases are found in the _cases_GB_ and _cases_IE_ folders.
 
-**NB.** the scripts assume that you're using the same file structure as the repo:
-
-NStore_SIM
-    -cases_folder
-        -case_1_folder
-        -case_2_folder
-    ...
-    -universal_functions
-
-When downloading file from this repo, it is important that you keep the same file structure (or else make appropriate edits to the code).
+**NB.** the scripts assume that you're using the same file structure as the repo; when downloading file from this repo, it is important that you keep the same file structure (or else make appropriate edits to the code).
 
 
 
