@@ -1,0 +1,7 @@
+rated_input_power = 21.76
+rated_output_power = 17.00
+store_capacity = 2959.61
+round_trip_efficiency = 0.68
+self_discharge_rate = 0.0
+lower_fraction = 0.25
+upper_fraction = 0.75
