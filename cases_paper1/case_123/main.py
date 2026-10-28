@@ -10,7 +10,7 @@ The system considered here uses three types of storage ... Hydrogen+ACAES+Batter
 #in the case folder
 import sys
 from pathlib import Path
-par = Path.cwd().parent
+par = Path.cwd().parent.parent
 sys.path.insert(1, f'{par}/universal_functions')
 
 #Import relevant Python libraries

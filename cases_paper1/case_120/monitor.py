@@ -4,7 +4,7 @@ and plots system cost against evaluation number.
 """
 import sys
 from pathlib import Path
-par = Path.cwd().parent
+par = Path.cwd().parent.parent
 sys.path.insert(1, f'{par}/universal_functions')
 
 import os
