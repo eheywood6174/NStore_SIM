@@ -24,8 +24,8 @@ import numpy as np
 from numba import njit
 from get_x_futr import get_x_futr
 from get_attrctvnss import get_attrctvnss
-from calc_powrs_c import calc_powrs_c1
-from calc_powrs_d import calc_powrs_d1
+from calc_powrs_c import calc_powrs_c
+from calc_powrs_d import calc_powrs_d
 from calc_powrs_xc import calc_powrs_xc
 
 @njit
@@ -82,12 +82,12 @@ def calc_powers(supply_ca, demand_ca, ihr, xvec, storz, NSSm_opts):
         propns_chgng = marg_vals_chg**4 #Proportions for charging
         flags_replete = xvec_f>(storz[:,1]*(nhrs-ihr)) #Effectively full?
         propns_chgng = propns_chgng*(1-flags_replete) + 1E-3*flags_replete
-        powers = calc_powrs_c1(pnet, xvec_tmp, storz, propns_chgng)
+        powers = calc_powrs_c(pnet, xvec_tmp, storz, propns_chgng)
         xvec_c = powers*effvec #This is the xvec adjustment for charging
     elif pnet < 0: #Stores are discharging
         marg_vals_dchg = attrctvnss/rtevec #Marginal values (discharging)
         propns_dchgng = marg_vals_dchg**(-4) #Proportions for discharging
-        powers = calc_powrs_d1(pnet, xvec_tmp, storz, propns_dchgng)
+        powers = calc_powrs_d(pnet, xvec_tmp, storz, propns_dchgng)
         xvec_d = powers #This is the xvec adjustment for discharging
     
     #Now consider whether any cross-charging should occur

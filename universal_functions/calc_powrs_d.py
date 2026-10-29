@@ -27,7 +27,7 @@ import numpy as np
 from numba import njit
 
 @njit
-def calc_powrs_d1(pnet, xvec, storz, propns_dchrgng):
+def calc_powrs_d(pnet, xvec, storz, propns_dchrgng):
 
     #Unpack vectors from storz
     sto_pwrs = storz[:,1] #Output powers
